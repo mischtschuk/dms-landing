@@ -1,0 +1,30 @@
+$fontFamily: "Open Sans", sans-serif;
+$fontFamilySecondaryBold: 'Nexa Bold', sans-serif;
+$fontFamilySecondaryLight: 'Nexa Light', sans-serif;
+
+/* Responsive screen width */
+
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+
+/* Color vars */
+
+$fontSizeBase: 20px;
+
+$imgPath: '../img';
+$fontsPath: '../fonts';
+
+$primaryColor: #0094C2;
+$textColor: #444;
+$white: #fff;
+$white12: rgba(255, 255, 255, 0.12);
+$white16: rgba(255, 255, 255, 0.16);
+$white24: rgba(255, 255, 255, 0.24);
+$white64: rgba(255, 255, 255, 0.64);
+$diamond12: rgba(185, 242, 255, 0.12);
+$diamond20: rgba(185, 242, 255, 0.20);
+$warningColor: #d17070;
+$lightGray: #fafafc;
+$deepGray: #f0f0f0;

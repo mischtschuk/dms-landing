@@ -1,0 +1,62 @@
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.contentLoaderHolder {
+  padding: 45px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  .loader {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 5px solid #375463;
+    border-radius: 50%;
+    border-top: 5px solid #00c15b;
+    -webkit-animation: spin 1.5s linear infinite; /* Safari */
+    animation: spin 1.5s linear infinite;
+  }
+}
+
+$loader-sizes: (
+  "sm": 20,
+  "md": 30,
+  "lg": 40,
+  "xl": 50,
+);
+@each $sizename, $sizeval in $loader-sizes {
+  .loader-#{$sizename} {
+    vertical-align: middle;
+    display: inline-block;
+    width: $sizeval * 1px;
+    height: $sizeval * 1px;
+    border: ($sizeval/10 * 1px) solid $diamond12;
+    border-radius: 50%;
+    border-top: ($sizeval/10 * 1px) solid #ffffff;
+    -webkit-animation: spin 1.5s linear infinite; /* Safari */
+    animation: spin 1.5s linear infinite;
+    flex-shrink: 0;
+  }
+}

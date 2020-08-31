@@ -1,0 +1,39 @@
+//////use height 687px to test intro slide, and height 832px or 702px to test others
+////
+//:root {
+//  position: relative;
+//  min-height: 100%;
+//}
+//
+//:root::before {
+//  content: "";
+//  width: 100%;
+//  height: 100%;
+//  background: linear-gradient(to top, #f00, transparent 1px) 0 0 / 100% 32px, /* основная сетка */
+//  transparent; /* цвет фона */
+//  //linear-gradient(to top, #f99, transparent 1px) 0 0 / 100% 8px; /* дополнительная сетка */
+//  position: absolute;
+//  z-index: 99;
+//  pointer-events: none;
+//}
+//////
+////.aboutSlide,
+////.workSlide {
+////  position: relative;
+////  min-height: 100%;
+////}
+////
+////.aboutSlide::before,
+////.workSlide::before,
+////.mainMenuContainer:before {
+////  content: "";
+////  width: 100%;
+////  height: 100%;
+////  top: 0;
+////  background: linear-gradient(to top, #f00, transparent 1px) 0 0 / 100% 32px, /* основная сетка */
+////  transparent; /* цвет фона */
+////  //linear-gradient(to top, #f99, transparent 1px) 0 0 / 100% 8px; /* дополнительная сетка */
+////  position: absolute;
+////  z-index: 99;
+////  pointer-events: none;
+////}

@@ -1,0 +1,67 @@
+body {
+  overflow-x: hidden;
+  font-size: 15px;
+  line-height: 24px;
+  font-family: $fontFamily;
+  color: $textColor;
+  position: relative;
+  height: 100%;
+  &.menuOpen {
+    overflow: hidden;
+    height: 100vh;
+    min-height: 100vh;
+    -webkit-overflow-scrolling: touch !important;
+    position: fixed;
+    width: 100%;
+  }
+}
+
+* {
+  font-family: $fontFamily;
+}
+
+.mainContainer {
+  padding: 0 16px;
+  max-width: 1312px;
+  width: 100%;
+  margin: auto;
+  &.fluid {
+    max-width: 100%;
+  }
+}
+
+
+
+@media (min-width: $screen-sm) {
+  .mainContainer {
+    padding: 0 24px;
+  }
+}
+
+@media (min-width: $screen-md) {
+  .mainContainer {
+    padding: 0 32px;
+  }
+}
+
+@media (min-width: $screen-lg) {
+  .mainContainer {
+    padding: 0 48px;
+  }
+  body {
+    font-size: $fontSizeBase;
+  }
+  body {
+    &.menuOpen {
+      overflow-y: auto;
+      height: 100%;
+      min-height: unset;
+      position: relative;
+      width: 100%;
+      //opacity: 0;
+    }
+  }
+}
+
+@media (min-width: $screen-xl) {
+}

@@ -1,0 +1,86 @@
+.mainFooter {
+  background: #FAFAFA;
+  font-size: 15px;
+  line-height: 24px;
+  color: rgba(68,68,68,.56);
+  .footerWrapper {
+    margin: 0 -20px;
+    padding: 60px 0;
+  }
+  .footerBlock {
+    padding: 0 20px;
+    width: 100%;
+    text-align: center;
+  }
+  .footerBlock + .footerBlock {
+    margin-top: 32px;
+  }
+  .copyrightWrapper {
+    padding: 24px 0;
+    border-top: 1px solid rgba(68, 68, 68, 0.12);
+    text-align: center;
+  }
+  a {
+    color: rgba(68,68,68,.56);
+    text-decoration: none;
+  }
+  .footerMenu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+    .footerMenuItem + .footerMenuItem {
+      margin-left: 24px;
+    }
+  }
+  .fbTitle {
+    margin-bottom: 16px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    font-family: $fontFamilySecondaryBold;
+  }
+  .fbAddressBlock + .fbAddressBlock {
+    margin-top: 16px;
+  }
+}
+
+@media (min-width: $screen-sm) {
+  .mainFooter {
+    .footerWrapper {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .footerBlock {
+      padding: 0 20px;
+      width: 50%;
+      text-align: left;
+    }
+    .copyrightWrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-align: left;
+      .footerMenu {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: $screen-md) {
+
+}
+
+@media (min-width: $screen-lg) {
+  .mainFooter {
+    .footerBlock {
+      width: 25%;
+    }
+  }
+}
+
+@media (min-width: $screen-xl) {
+
+}

@@ -1,0 +1,249 @@
+@import "reset";
+@import "variables";
+@import "colors";
+@import "grid";
+@import "borders";
+@import "wrappers";
+@import "typography";
+@import "spacings";
+@import "buttons";
+@import "loader";
+@import "forms";
+@import "header";
+@import "footer";
+@import "layout";
+@import "fonts";
+@import "vertical-rhytm";
+
+
+.manualBlock {
+  text-align: center;
+  background: #0094C2;
+  padding: 48px 0;
+  a {
+    color: #fff;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 24px;
+    font-family: $fontFamilySecondaryBold;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    margin: auto;
+    .caption {
+      font-family: $fontFamilySecondaryBold;
+      display: block;
+      margin-top: 5px;
+    }
+    .icoManual {
+      content: "";
+      display: block;
+      background-image: url("#{$imgPath}/round-manual-40px.svg");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 40px;
+      height: 40px;
+      margin-right: 12px;
+    }
+    .icoArrow {
+      content: "";
+      display: block;
+      background-image: url("#{$imgPath}/round-keyboard_arrow_right-24px.svg");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 24px;
+      height: 24px;
+      margin-left: 12px;
+      margin-top: 2px;
+    }
+  }
+}
+
+.slide {
+  &.gray {
+    background-color: #fafafa;
+  }
+}
+
+.aboutSlide {
+  padding: 120px 0;
+  .slideTitle {
+    margin-bottom: 24px;
+  }
+  .subTitle {
+    margin-bottom: 48px;
+  }
+}
+
+.asList {
+  list-style: none;
+  display: flex;
+  margin: -20px;
+  flex-wrap: wrap;
+  .asListItem {
+    padding: 20px;
+    width: 100%;
+  }
+  .title {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 32px;
+    font-family: $fontFamilySecondaryBold;
+    margin-bottom: 16px;
+  }
+  .text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .imgHolder {
+    img {
+      display: block;
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.formSlide {
+  padding: 80px 0;
+  .formTitle {
+    margin-bottom: 16px;
+  }
+  .textPart {
+    margin-bottom: 32px;
+    text-align: center;
+    a {
+      color: $primaryColor;
+      text-decoration: none;
+    }
+    p {
+      margin-top: 24px;
+    }
+  }
+  .formPart {
+    max-width: 480px;
+    flex-shrink: 0;
+    background: #FFFFFF;
+    box-shadow: 0 1px 1px rgba(68, 68, 68, 0.04), 0 2px 32px rgba(68, 68, 68, 0.14);
+    border-radius: 6px;
+    padding: 32px 24px 40px;
+    margin: auto;
+  }
+  .btnHolder {
+    margin-top: 16px;
+  }
+}
+
+.subTitle {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.howItWorksSlide {
+  padding: 120px 0;
+  .howItWorksImg {
+    img {
+      display: block;
+      margin: auto;
+      max-width: 100%;
+    }
+  }
+  .slideTitle {
+    margin-bottom: 48px;
+  }
+}
+
+.slideTitle {
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 48px;
+  color: #444444;
+  font-family: $fontFamilySecondaryBold;
+}
+
+.introSlide {
+  padding: 56px 0;
+  .introSlideWrapper {
+
+  }
+  .imgPart {
+    img {
+      display: block;
+      max-width: 100%;
+    }
+  }
+  .textPart {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  .slideTitle {
+    margin-bottom: 16px;
+  }
+  p {
+    margin-bottom: 32px;
+  }
+  .introSlideImg {
+
+  }
+}
+
+@media (min-width: $screen-sm) {
+  .asList {
+    .asListItem {
+      width: 50%;
+    }
+  }
+}
+
+@media (min-width: $screen-md) {
+
+}
+
+@media (min-width: $screen-lg) {
+  .asList {
+    .asListItem {
+      width: 33.333%;
+    }
+  }
+  .formSlide {
+    .formSlideWrapper {
+      display: flex;
+    }
+    .textPart {
+      margin-bottom: 0;
+      text-align: left;
+    }
+    .formPart {
+      margin-left: 144px;
+      margin-right: unset;
+    }
+  }
+}
+
+@media (min-width: $screen-xl) {
+  .introSlide {
+    .introSlideWrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .imgPart,
+    .textPart {
+      width: calc(50% - 16px);
+    }
+    .textPart {
+      text-align: left;
+    }
+    .imgPart {
+      height: 480px;
+      position: relative;
+    }
+    .introSlideImg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+    }
+  }
+}

@@ -1,0 +1,59 @@
+.mainHeader {
+  background: #FFFFFF;
+  box-shadow: 0 1px 0 rgba(68, 68, 68, 0.06);
+  padding: 16px 0;
+  .headerWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logoHolder {
+    display: flex;
+    align-items: center;
+    .logoImg {
+      display: block;
+      margin-right: 10px;
+    }
+    .logoText {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 24px;
+      font-family: $fontFamilySecondaryBold;
+      display: block;
+      margin-top: 3px;
+    }
+  }
+  .mainMenu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    .mainMenuItem {
+      a {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 24px;
+        color: #444444;
+        text-decoration: none;
+        display: block;
+      }
+      &.hasIcon {
+        a {
+          display: flex;
+          align-items: center;
+          img {
+            display: block;
+            margin-right: 8px;
+          }
+          .caption {
+            display: block;
+          }
+        }
+      }
+    }
+    .mainMenuItem + .mainMenuItem {
+      border-left: 1px solid rgba(68, 68, 68, 0.12);
+      margin-left: 16px;
+      padding-left: 16px;
+    }
+  }
+}
