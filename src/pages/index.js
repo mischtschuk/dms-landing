@@ -3,7 +3,7 @@ import React from "react"
 import Layout from "../components/layouts/layout"
 import SEO from "../components/seo"
 
-import ChartImg from '../assets/img/chartdms.png'
+import ChartImg from '../assets/img/Chart-Animated-Fixed-Size.svg'
 import As1 from '../assets/img/as1.svg'
 import As2 from '../assets/img/as2.svg'
 import As3 from '../assets/img/as3.svg'
@@ -112,7 +112,7 @@ const IndexPage = () => (
                 </ul>
             </div>
         </div>
-        <div className="slide gray howItWorksSlide">
+        <div className="slide howItWorksSlide">
             <div className="mainContainer fluid">
                 <h2 className="slideTitle text-center">How it works</h2>
                 <div className="howItWorksImg">
